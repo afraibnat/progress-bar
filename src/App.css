@@ -1,0 +1,81 @@
+html {
+  background-image: url("https://cdn.pixabay.com/photo/2021/07/15/05/06/flowers-6467492_1280.jpg");
+ }
+ 
+ body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+ 
+ html, body {
+   height: 100%;
+   margin: 0;
+ }
+ 
+ @font-face {
+  font-family: 'boldFont';
+  src: url('sansation_bold.woff');
+ }
+ 
+ @font-face {
+  font-family: 'lightFont';
+  src: url('sensation_light.woff');
+ }
+ 
+ h2 {
+  font-family: 'boldFont';
+  font-size: 2.5em;
+  text-align: center;
+ }
+ 
+ #wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0.75);
+   border-radius: 40px;
+   margin: auto;
+   padding: 50px;
+ }
+ 
+ 
+ #progress-bar-empty-space {
+  width: 500px;
+  height: 40px;
+  background-color: lightgray;
+  position: relative;
+  border: 2px solid black;
+ }
+ 
+ #progress-bar {
+  height: 100%;
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+ 
+ #progress-btn {
+  background-color: pink;
+  border-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
+ 
+ #status-text {
+  text-align: center;
+  font-size: 20px;
+ }
+ 
+ #status-text, #progress-btn {
+  font-family: 'lightFont';
+ }
